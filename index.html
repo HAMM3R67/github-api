@@ -6,12 +6,12 @@
   <body ng-controller="gitHubController">
     
     <form>
-      <input ng-model="searchText"></input>
-      <button ng-click="getUserData()"></button>
+      <input ng-model="searchText" placeholder="Username"></input>
+      <button ng-click="getUserData()">Submit</button>
     </form>
         <!--{{user}}-->
         <div>{{user.login}}</div>
-        <div>{{user.avatar_url}}</div>
+        <div><img ng-src="{{user.avatar_url}}"></img></div>
         <div>{{user.company}}</div>
         <div>{{user.email}}</div>
         <div>{{user.public_repos}}</div>
