@@ -1,4 +1,4 @@
 var app = angular.module("github-api")
-.controller("apiController", function($scope, apiService){
+.controller("apiController", function($scope, githubService){
 	
 })
